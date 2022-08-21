@@ -7,7 +7,7 @@ package pharmacy1;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import javax.swing.UIManager;
+
 
 /**
  *
@@ -148,6 +148,7 @@ public class Splash extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Splash.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -168,7 +169,7 @@ public class Splash extends javax.swing.JFrame {
                  Mysplash.jProgressBar1.setForeground(Color.GREEN);
                   Mysplash.jProgressBar1.setBackground(Color.BLACK);
                  // Mysplash.jProgressBar1.setStringPainted(true);
-                Mysplash.Percentage.setText(Integer.toString(i));
+                Mysplash.Percentage.setText(Integer.toString(i)+"%");
             }
         }
         catch(Exception e)

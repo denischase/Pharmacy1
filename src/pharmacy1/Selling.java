@@ -88,7 +88,6 @@ public class Selling extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1009, 622));
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 51));
         jPanel1.setPreferredSize(new java.awt.Dimension(964, 622));
@@ -307,6 +306,11 @@ public class Selling extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("SELLING");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -378,7 +382,7 @@ public class Selling extends javax.swing.JFrame {
             }
             catch(SQLException e)
             {
-                e.printStackTrace();
+                  e.printStackTrace();
             }
             SelectedMed();
         
@@ -473,6 +477,11 @@ public class Selling extends javax.swing.JFrame {
        
     }//GEN-LAST:event_MedicineTableMouseClicked
 
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        new Selling().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -498,6 +507,7 @@ public class Selling extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Selling.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
